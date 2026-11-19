@@ -36,11 +36,11 @@ async def handle_message(message: Message):
     
     if state["counter"] >= state["target"]:
         try:
-            await bot.send_gift(
-                user_id=user_id,
-                gift_id=GIFT_ID,
-                text="Поздравляем! Вы выиграли сердечко 💝 от @Doxej и @Hukyu"
-            )
+            # await bot.send_gift(
+            #     user_id=user_id,
+            #     gift_id=GIFT_ID,
+            #     text="Поздравляем! Вы выиграли сердечко 💝 от @Doxej и @Hukyu"
+            # )
             
             await message.answer(
                 f"🎁 **ДЖЕКПОТ!**\n"
@@ -49,7 +49,7 @@ async def handle_message(message: Message):
                 parse_mode="Markdown"
             )
         except Exception as e:
-            await message.answer(f"⚠️ Ошибка при отправке: {e}")
+            await message.answer(f"⚠️ Ошибка: {e}")
         
         state["counter"] = 0
         state["target"] = random.randint(MIN_MSG, MAX_MSG)
