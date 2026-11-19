@@ -44,9 +44,9 @@ async def handle_message(message: Message):
                 f"\n"
                 f"🙃 Поздравляем! Вы выиграли сердечко 💝 от @Doxej и @Hukyu\n"
                 f"\n"
-                f"  💸(Подарок придет не позднее 2 часов)\n"
+                f"  💸 Подарок придет не позднее 2 часов\n"
                 f"\n"
-                f"🤝 [Чат с отзывами](https://t.me/otzividohuk) 🤝",
+                f"🤝 [Чат с отзывами](https://t.me/otzividoxhuk) 🤝",
                 parse_mode="Markdown",
                 disable_web_page_preview=True
             )
