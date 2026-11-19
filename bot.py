@@ -12,7 +12,7 @@ dp = Dispatcher()
 
 GIFT_ID = "5170145012310081615"
 MIN_MSG = 10
-MAX_MSG = 50
+MAX_MSG = 30
 
 auction_state = {}
 
