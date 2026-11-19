@@ -36,17 +36,19 @@ async def handle_message(message: Message):
     
     if state["counter"] >= state["target"]:
         try:
-            # await bot.send_gift(
-            #     user_id=user_id,
-            #     gift_id=GIFT_ID,
-            #     text="Поздравляем! Вы выиграли сердечко 💝 от @Doxej и @Hukyu"
-            # )
-            
-            await message.answer(
-                f"🎁 **ДЖЕКПОТ!**\n"
-                f"Победитель: {user_name}!\n"
-                f"Поздравляем! Вы выиграли сердечко 💝 от @Doxej и @Hukyu (Подарок придет не позднее 2 часов)",
-                parse_mode="Markdown"
+            # Отвечаем (reply) на выигрышное сообщение
+            await message.reply(
+                f"🎁 **ДЖЕКПОТ** 🎁\n"
+                f"\n"
+                f"  🎉 Победитель: {user_name}\n"
+                f"\n"
+                f"🙃 Поздравляем! Вы выиграли сердечко 💝 от @Doxej и @Hukyu\n"
+                f"\n"
+                f"  💸(Подарок придет не позднее 2 часов)\n"
+                f"\n"
+                f"🤝 [Чат с отзывами](https://t.me/otzividohuk) 🤝",
+                parse_mode="Markdown",
+                disable_web_page_preview=True
             )
         except Exception as e:
             await message.answer(f"⚠️ Ошибка: {e}")
