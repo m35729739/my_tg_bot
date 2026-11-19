@@ -46,7 +46,7 @@ async def handle_message(message: Message):
                 f"\n"
                 f"  💸 Подарок придет не позднее 2 часов\n"
                 f"\n"
-                f"🤝 [Чат с отзывами](https://t.me/otzividoxhuk) 🤝",
+                f"🤝 [Чат с отзывами](https://telegram.me/otzividoxhuk) 🤝",
                 parse_mode="Markdown",
                 disable_web_page_preview=True
             )
